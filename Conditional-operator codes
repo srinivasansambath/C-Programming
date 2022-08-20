@@ -1,0 +1,41 @@
+// greatest of two numbers using conditional operator
+#include <stdio.h>
+int main ()
+{
+    int a,b;
+    printf("Enter the values for a and b");
+    scanf("%d%d",&a,&b);
+    (a>b) ? printf("a is max"):printf("b is max");
+    return 0;
+}
+
+
+// program to find given number is odd or even number using conditional operator
+#include <stdio.h>
+int main ()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    a%2 != 0 ? printf("The number is odd"):printf("The number is even");
+    return 0;
+}
+
+// program to find given number is odd or even number
+#include <stdio.h>
+int main ()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    a%2 == 1 ? printf("The number is odd"):printf("The number is even");
+    return 0;
+}
+// maximum of three  numbers using conditonal operators
+#include <stdio.h>
+int main()
+{
+    int a=5,b=6,c=4;
+    int x = (a>b && a>c)? printf ("%d",a): 
+    (b>c)?printf ("%d",b):printf ("%d",c) ;
+}
