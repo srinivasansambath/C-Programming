@@ -39,3 +39,23 @@ int main()
     int x = (a>b && a>c)? printf ("%d",a): 
     (b>c)?printf ("%d",b):printf ("%d",c) ;
 }
+
+
+//pattern programs
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j = 1;
+    while(j<=5)
+    {
+    i=1;
+    while(i<=5)
+    {
+        printf("*");
+        i=i+1;
+    }
+    printf("\n");
+    j=j+1;
+    }
+}
