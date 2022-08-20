@@ -1,0 +1,147 @@
+// if looking like loop
+#include<stdio.h>
+int main()
+{
+    int x=1;
+    if (x<=5)
+    {
+        printf("%d",1);
+        x=x+1;
+        printf("\n%d",x);
+    }
+}
+// while loop pgm 1
+#include<stdio.h>
+int main()
+{
+    int a = 5;
+    while (a>=1)
+    {
+        a=a-1;
+        printf("%d",a);
+    }
+}
+//
+//c program to print n natural numbers
+#include<stdio.h>
+int main()
+{
+    int n,a=1;
+    printf("Enter the value for n");
+    scanf("%d",&n);
+    while(a<=n)
+    {
+        printf("%d ",a);
+        a=a+1;
+    }
+}
+////c program to print sum n natural numbers
+#include<stdio.h>
+int main()
+{
+   int n,a=1,sum=0;
+   printf("Enter the value for n");
+   scanf("%d",&n);
+   while(a<=n)
+   {
+    sum=sum+a;
+    a=a+1;
+   }
+   printf("sum of n natural nums is %d",sum);
+}
+
+//c program to print factorial of n natural numbers
+#include<stdio.h>
+int main()
+{
+    int a=1,n,fact=1;
+    printf("Enter n val:");
+    scanf("%d",&n);
+    while(a<=n)
+    {
+    fact=fact*a;
+    a=a+1;
+    }
+    printf("The val of factorial is %d",fact);
+}
+//c program to print factorial of n natural numbers using do while
+#include<stdio.h>
+int main()
+{
+    int a=1,n,fact=1;
+    printf("Enter n val:");
+    scanf("%d",&n);
+    do
+    {
+    fact=fact*a;
+    a=a+1;
+    }while(a<=n);
+    printf("The val of factorial is %d",fact);
+}
+//pattern programs
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j = 1;
+    while(j<=5)
+    {
+    i=1;
+    while(i<=5)
+    {
+        printf("%d",i);
+        i=i+1;
+    }
+    printf("\n");
+    j=j+1;
+    }
+}
+//pattern programs
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j = 1;
+    while(j<=5)
+    {
+    i=1;
+    while(i<=5)
+    {
+        printf("%d",i);
+        i=i+1;
+    }
+    printf("\n");
+    j=j+1;
+    }
+}
+output
+12345
+12345
+12345
+12345
+12345
+////pattern programs
+#include<stdio.h>
+int main()
+{
+    int i;
+    int j = 1;
+    while(j<=5)
+    {
+    i=1;
+    while(i<=5)
+    {
+        printf("%d",j);
+        i=i+1;
+    }
+    printf("\n");
+    j=j+1;
+    }
+}
+output:
+11111
+22222
+33333
+44444
+55555
+
