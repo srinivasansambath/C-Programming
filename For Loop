@@ -1,0 +1,11 @@
+// for loop concepts
+#include <stdio.h>
+
+int main()
+{
+    for(;;)
+    {
+    printf("For loop should have 2 semicolons");
+    printf("If no condition is initialized, defaultly it takes as true");
+    }
+}
