@@ -1,0 +1,25 @@
+// Codes of short circuit operators
+#include <stdio.h>
+
+int main()
+{
+    int a=-1,b=10,y;
+    y= ++a && ++b;
+    printf("%d %d %d",a,b,y);
+    return 0;
+}
+output:
+0 10 0
+
+// Using && operator
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    a=b=c=-1;
+    d= ++a && ++b && ++c;
+    printf("%d %d %d %d",a,b,c,d);
+    return 0;
+}
+
