@@ -17,3 +17,24 @@ int main()
     printf("\n%s",sen);
     return 0;
 }
+
+// sum and difference of two numbers
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+    int num1,num2,intsum,intsub;
+    float num3,num4,floatsum,floatsub;
+    scanf("%d %d",&num1,&num2);
+    scanf("%f %f",&num3,&num4);
+    intsum = num1+num2;
+    intsub = num1-num2;
+	floatsum = num3+num4;
+    floatsub = num3-num4;
+    printf("%d %d",intsum,intsub);
+    printf("\n%.1f %.1f",floatsum,floatsub);
+    return 0;
+}
