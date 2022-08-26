@@ -14,3 +14,21 @@ int main()
 
 OUTPUT:
 0 // Garbage value
+
+// program with static int
+#include <stdio.h>
+void demo()
+{
+    int i =1;
+    static int j = 2;
+    printf(" %d %d",i,j);
+    ++i;
+    ++j;
+}
+void demo();
+int main()
+{
+    demo();
+    demo();
+    demo();
+}
