@@ -1,0 +1,16 @@
+//Programs of storage classes
+#include <stdio.h>
+
+int main()
+{
+    int a = 20;
+    goto inside;
+    {
+        int a = 30;
+        inside:
+        printf("%d",a);
+    }
+}
+
+OUTPUT:
+0 // Garbage value
