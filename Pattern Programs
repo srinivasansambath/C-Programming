@@ -1,0 +1,25 @@
+// Pattern printing programs in different ways
+int main()
+{
+    int i,j;
+    j=1;
+    while (j<=5)
+    {
+        i=1;
+        while (i<=5)
+        {
+            printf("%d",i);
+            i=i+1;
+        }
+        printf("\n");
+        j=j+1;
+    }
+    return 0;
+}
+
+OUTPUT:
+12345
+12345
+12345
+12345
+12345
