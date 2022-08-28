@@ -1,0 +1,68 @@
+// Data type related programs
+// In online compiler
+#include <stdio.h>
+int main()
+{
+    int a;
+    printf("%d",sizeof(a));
+    return 0;
+}
+ /* OUTPUT:
+4 */
+
+#include <stdio.h>
+int main()
+{
+    short int a;
+    printf("%d",sizeof(a));
+    return 0;
+}
+/* OUTPUT
+2 */
+Defaultly this compiler takes value of a as 4 bytes, for 2 bytes take use short int
+
+#include <stdio.h>
+int main()
+{
+    short int a = 32768;
+    printf("%d",a);
+    return 0;
+}
+OUTPUT:
+-32767
+
+//
+
+#include <stdio.h>
+int main()
+{
+    short unsigned int a = 65536;
+    printf("%d",a);
+    return 0;
+}
+OUTPUT:
+0
+
+//
+#include <stdio.h>
+int main()
+{
+    short unsigned int a = 65537;
+    printf("%d",a);
+    return 0;
+}
+OUTPUT
+1
+
+//
+#include <stdio.h>
+int main()
+{
+    short unsigned int a = -1;
+    printf("%d",a);
+    return 0;
+}
+OUTPUT:
+-1
+
+//
