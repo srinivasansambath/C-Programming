@@ -65,7 +65,7 @@ int main()
 OUTPUT:
 -1
 
-//
+// In online compiler
 #include <stdio.h>
 int main()
 {
@@ -86,3 +86,59 @@ OUTPUT:
 -25536l
 2
 anushka
+
+// Turbo c Compiler
+
+//
+#include <stdio.h>
+int main()
+{
+    short int s;
+    s = 200 * 200;              //-25536
+    printf("%d\n",s);           
+    printf("%d",sizeof(s));
+    if (s==200*200)            // 200*200 = -25536 generally  
+    {
+        printf("sai pallavi");
+    }
+    else
+    {
+        printf("Anushka");
+    }
+}
+OUTPUT:
+-25536
+2
+sai pallavi
+
+// float related program
+#include <stdio.h>
+int main()
+{
+    float x = 0.6;
+    if (x==0.6)
+    {
+        printf("Srini");
+    }
+    else
+    {
+        printf("raja");
+    }
+}
+
+//
+#include <stdio.h>
+int main()
+{
+    float x = 0.125;
+    if (x==0.125)
+    {
+        printf("Srini");
+    }
+    else
+    {
+        printf("raja");
+    }
+}
+OUTPUT:
+raja
