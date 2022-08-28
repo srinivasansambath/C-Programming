@@ -66,3 +66,23 @@ OUTPUT:
 -1
 
 //
+#include <stdio.h>
+int main()
+{
+    short int s;
+    s = 200 * 200;              //-25536
+    printf("%d\n",s);           
+    printf("%d",sizeof(s));
+    if (s==200*200)            // 200*200 = 40000 generally              // -25536l == 40000
+    {
+        printf("sai pallavi");
+    }
+    else
+    {
+        printf("Anushka");
+    }
+}
+OUTPUT:
+-25536l
+2
+anushka
