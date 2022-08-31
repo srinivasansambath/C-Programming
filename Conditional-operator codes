@@ -59,3 +59,7 @@ int main()
     j=j+1;
     }
 }
+// Important Note:
+In a called function (with return type) comprising of many conditions where conditional operator is used , the output of the conditional operator must be stored in a variable and then only
+returned to the original function. Multiple return statements (in true place of conditional operator) will result in non checking of the entire code and returing 
+to the calling function.
