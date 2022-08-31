@@ -1,0 +1,41 @@
+// Basic array program
+main()
+{
+    int a[50],i,ec=0,es=0,oc=0,os=0,n;
+    printf("Enter how many numbers do you want?");
+    scanf("%d",&n);
+    printf("Enter %d elements",n);
+    for (i=0;i<n;i=i+1)
+    {
+        scanf("%d",&a[i]);
+    }
+    for (i=0;i<n;i=i+1)
+    {
+        if(a[i]%2==0)
+        {
+            ec++;
+            es = es + a[i];
+        }
+        else
+        {
+            oc++;
+            os = os + a[i];
+        }
+    }
+    printf("ec=%d \n es = %d\n oc =%d\n os =%d\n",ec,es,oc,os);
+    
+}
+OUTPUT:
+Enter how many numbers do you want?
+5
+Enter 5 elements
+1
+4
+7
+2
+7
+ec= 2
+es= 6
+oc= 3
+os= 15
+
