@@ -14,3 +14,20 @@ int main()
 }
 OUTPUT:
 19 11
+
+// Pointers Concept based program
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, b = 20;
+    int * p = &a, *q = &b;
+    *p=40;
+    p=q;
+    *q = 60;
+    printf("%d %d ",a,b);
+    printf("%d %d ",*p,*q);
+    return 0;
+}
+OUTPUT :
+40 60 40 60
