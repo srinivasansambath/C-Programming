@@ -39,3 +39,18 @@ es= 6
 oc= 3
 os= 15
 
+//String programs
+#include <stdio.h>
+
+int main()
+{
+    char a[]="abcdef";
+    printf("%s\n",a);
+    printf("%u\n",&a);
+    printf("%u\n",&a+1);
+    printf("%s",a+3);
+    printf("%s",a[3]);
+    return 0;
+}
+
+
