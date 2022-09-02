@@ -52,5 +52,19 @@ int main()
     printf("%s",a[3]);
     return 0;
 }
+// string concepts
+#include <stdio.h>
+
+int main()
+{
+    char a[]="srinivasan";
+    printf("%s\n",a);
+    printf("%u\n",&a);
+    printf("%u\n",&a+1);
+    printf("%s",a+3);
+    printf("%s",a[3]);
+    return 0;
+}
+
 
 
