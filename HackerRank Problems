@@ -86,4 +86,32 @@ int main() {
     
     return 0;
 }
+//
+Pointers in C Hacker Rank Problem 
+#include <stdio.h>
+#include <stdlib.h>
+void update(int *a,int *b) {
+    int sum;int sub ;
+    sum = *a + *b;
+    sub = (*a - *b);
+    int sub1= abs(sub);
+    *a = sum;
+    *b = sub1;
+}
+
+int main() {
+    int a, b;
+    int *pa = &a, *pb = &b;
+    
+    scanf("%d %d", &a, &b);
+    update(pa, pb);
+    printf("%d\n%d", a, b);
+
+    return 0;
+}
+/*The observation from the above program is whenever we are using abs() function then we need to give only one variable as an argument.
+While giving an expression as arg compilation error occurs. 
+Inorder to find absolute value of an expression the trick is to store the Final result of the expression into a new variable with int datatype
+and then apply abs() function.
+syntax : int x = abs(y);*/
 
