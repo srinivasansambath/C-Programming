@@ -86,6 +86,11 @@ int main() {
     
     return 0;
 }
+/* The error occured here is because, the calling function has more return statements. 
+"Whenever a return statement is excecuted, control immediately closes the function definition and returns back to the calling function."
+So if we give return statements multiple times, the other conditions after 1st return won't be checked.
+*/
+/*Inorder to overcome the above problem store the result of conditional operator in a variable and then return that variable to the calling function*/
 //
 Pointers in C Hacker Rank Problem 
 #include <stdio.h>
