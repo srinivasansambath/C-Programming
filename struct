@@ -1,0 +1,19 @@
+// Program for struct
+#include <stdio.h>
+
+int main()
+{
+    struct emp 
+    {
+        int eid;
+        char ename [20];
+        float esal;
+    };
+    struct emp e1 ={1,"srini",1000000};
+    printf("%d %s %f",e1.eid,e1.ename,e1.esal);
+    
+
+    return 0;
+}
+OUTPUT:
+1 srini 1000000.000000
