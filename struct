@@ -1,3 +1,23 @@
+
+
+#include <stdio.h>
+
+int main()
+{
+    struct emp 
+    {
+        int eid;
+        char ename [20];
+        float esal;
+    };
+    printf("%d %s %f",sizeof(e1.eid),sizeof(e1.ename),sizeof(e1.esal));
+    return 0;
+}
+// OUTPUT:
+/*Compilation error.
+In this program compiilation error occurs beacuse only planning is done in struct block and no memory is created.
+So when we are trying to check the size of operators we will get error.*/
+
 // Program for struct
 #include <stdio.h>
 
