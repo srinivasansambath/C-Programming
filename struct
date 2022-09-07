@@ -37,3 +37,21 @@ int main()
 }
 OUTPUT:
 1 srini 1000000.000000
+
+// program for struct
+main()
+{
+    struct  emp 
+    {
+        int eid=10;
+        char ename[20]="Dell";
+        float esal=100000;
+    };
+    struct emp e1;
+    printf("%d,%s,%f",e1.eid,e1.ename,e1.esal);
+}
+
+Output:
+Compilation error occurs because values can't be initialized in struct where memory not created.
+
+
