@@ -54,4 +54,46 @@ main()
 Output:
 Compilation error occurs because values can't be initialized in struct where memory not created.
 
+//Struct program related to garbage string
+#include<stdio.h>
+main()
+{
+    struct  emp 
+    {
+        int eid;
+        char ename[20];
+        float esal;
+    };
+    struct emp e1;
+    e1.eid=10;
+    e1.ename[20]="Dell";
+    e1.esal=100000;
+
+    printf("%d %s %f",e1.eid,e1.ename,e1.esal);
+}
+OUTPUT:
+// Sometimes prints 10 GV 100000.0000000
+sometimes compilation error occurs because of compilers.
+// Reason : String can't be assigned into an char array directly.
+
+#include<stdio.h>
+main()
+{
+    struct  emp 
+    {
+        int eid;
+        char ename[20];
+        float esal;
+    };
+    struct emp e1;
+    e1.eid=10;
+    strcpy(e1.ename,"dell");
+    e1.esal=100000;
+
+    printf("%d %s %f",e1.eid,e1.ename,e1.esal);
+}
+OUTPUT:
+10 dell 100000.000000
+
+
 
