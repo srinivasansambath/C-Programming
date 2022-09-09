@@ -30,3 +30,29 @@ OUTPUT:
 30 65
 42 42
 90 50
+
+//Fever Problem
+#include <stdio.h>
+
+int main(void) {
+	int te,i,t;
+	scanf("%d",&te);
+	    for(i=0;i<te;i=i+1)
+	    {
+	        scanf("%d",&t);
+	        if(t>98)
+	        {
+	            printf("YES\n");
+	        }
+	        else
+	        {
+	            printf("NO\n");
+	        }
+	}
+	return 0;
+}
+OUTPUT:
+3
+98
+100
+96
