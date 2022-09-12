@@ -56,3 +56,32 @@ OUTPUT:
 98
 100
 96
+
+// Age Limit problem
+#include <stdio.h>
+
+int main(void) {
+	int testCases,i,minAge,maxAge,age;
+	scanf("%d",&testCases);
+	for(i=1;i<=testCases;i=i+1)
+	{
+	    scanf("%d %d %d",&minAge,&maxAge,&age);
+	    if(age>=minAge && age<maxAge)
+	    {
+	        printf("YES");
+	    }
+	    else
+	    {
+	        printf("NO");
+	    }
+	    printf("\n");
+	}
+	return 0;
+}
+
+OUTPUT:
+2
+31 42 35
+28 30 32
+YES
+NO
