@@ -95,5 +95,23 @@ main()
 OUTPUT:
 10 dell 100000.000000
 
+//C program to print details of a hero such as name and age using structure
+#include <stdio.h>
+
+int main()
+{
+    struct  hero
+    {
+        char hname[20];
+        int hage;
+    };
+    struct hero h1 = {"srini",20};
+    printf("%s %d",h1.hname,h1.hage);
+    return 0;
+}
+
+OUTPUT:
+srini 20
+
 
 
