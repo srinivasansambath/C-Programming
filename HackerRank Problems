@@ -178,9 +178,13 @@ int main()
     {
         printf("eight");
     }
-    else
+    else if(num==9)
     {
     printf("nine");
+    }
+    else 
+    {
+    printf("Greater than 9");
     }
 
     return 0;
