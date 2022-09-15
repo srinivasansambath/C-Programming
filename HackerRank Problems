@@ -219,4 +219,6 @@ char* readline() {
 }
 OUTPUT:
 The above code is with error whenever 1 or 2 or 3 so on until 8 is given , it gives the output as nine only.
+The error is because, I didnt gave another else statement to satisfy the conditions when num vale is greater than 9.
+While giving else condition, it works!
 
