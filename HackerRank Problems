@@ -293,5 +293,11 @@ int main()
     }
     return 0;
 }
+OUTPUT:
+9 
+11
+nine
+even
+odd
 
 
