@@ -168,3 +168,32 @@ OUTPUT:
 Compilation error occurs.
 /*Error is occured because , struct variable is created out of the main function.
 Struct variable should be created within the main function.*/
+
+//
+struct variable needs to be created only in the same block where structure body is present.
+
+#include <stdio.h>
+#include<string.h>
+void test();
+int main()
+{
+    
+    test();
+    return 0;
+}
+void test()
+{
+    struct emp {
+        int eid;
+        char ename[20];
+        float esal;
+    };
+    struct emp e1;
+    e1.eid=25;
+    strcpy(e1.ename,"x");
+    e1.esal=10000;
+    printf("%d %s %f",e1.eid,e1.ename,e1.esal);
+}
+
+OUTPUT:
+25 x 10000.000000
