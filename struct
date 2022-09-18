@@ -142,3 +142,29 @@ int main()
 OUTPUT:
 srini 20 15-3-2002
 //Before program also same date of birth is printed but here, we are printing the d o b by using another struct.
+
+// Struct program
+#include <stdio.h>
+
+int main()
+{
+    struct emp {
+        int eid;
+        char ename[20];
+        float esal;
+    };
+    test();
+    return 0;
+}
+test()
+{
+    struct emp e1;
+    e1.eid=25;
+    strcpy(e1.ename,"x");
+    e1.esal=10000;
+    printf("%d %s %f",e1.eid,e1.ename,e1.esal);
+}
+OUTPUT:
+Compilation error occurs.
+/*Error is occured because , struct variable is created out of the main function.
+Struct variable should be created within the main function.*/
