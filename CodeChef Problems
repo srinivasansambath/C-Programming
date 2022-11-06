@@ -85,3 +85,40 @@ OUTPUT:
 28 30 32
 YES
 NO
+
+//Tasty Decisions CodeChef Problem
+#include <stdio.h>
+
+int main(void) {
+	int testCase,i,a,b;
+	scanf("%d",&testCase);
+	for(i=0; i<testCase; i++)
+	{
+	   scanf("%d  %d",&a,&b);
+	   a = 2*a;
+	   b = 5*b;
+	   if(a>b)
+	   {
+	       printf("Chocolate");
+	   }
+	   else if (b>a)
+	   {
+	       printf("Candy");
+	   }
+	   else{
+	       printf("Either");
+	   }
+	   
+	   a = 0; b = 0;
+	   printf("\n");
+	}
+	return 0;
+}
+
+OUTPUT:
+4
+5 1
+5 2
+5 3
+3 10
+
