@@ -151,5 +151,30 @@ OUTPUT:
 1 2
 1 4
 
+//Is the Score Consistent Problem
+#include<stdio.h>
+
+int main() {
+	int testCases,a,b,c,d,i;
+	scanf("%d",&testCases);
+	for(i=0 ; i< testCases ; i++)
+	{
+	    scanf("%d%d",&a,&b);
+	    scanf("%d%d",&c,&d);
+	    
+	    if((a<=c) && (b<=d))
+	    {
+	        printf("POSSIBLE");
+	    }
+	    else
+	    {
+	        printf("IMPOSSIBLE");
+	    }
+	    printf("\n");
+	}
+	return 0;
+}
+
+
 
 
