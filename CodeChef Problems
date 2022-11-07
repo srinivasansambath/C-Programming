@@ -174,7 +174,18 @@ int main() {
 	}
 	return 0;
 }
+OUTPUT:
+3
+1 5
+3 5
+3 4
+2 6
+2 2
+2 2
 
+POSSIBLE
+IMPOSSIBLE
+POSSIBLE
 
 
 
