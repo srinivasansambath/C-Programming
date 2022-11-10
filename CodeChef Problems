@@ -186,6 +186,25 @@ OUTPUT:
 POSSIBLE
 IMPOSSIBLE
 POSSIBLE
+// rcb and playoff problems
+#include <stdio.h>
+
+int main(void) {
+        // your code goes here
+        int t,a,x,y,z;
+        scanf("%d",&t);
+        for(int i=0;i<t;i++){
+            scanf("%d %d %d",&x,&y,&z);
+            a= x+z*2;
+            if(a>=y)
+            {
+            printf("yes\n");
+            }
+            else
+            printf("no\n");
+        }
+        return 0;
+}
 
 
 
