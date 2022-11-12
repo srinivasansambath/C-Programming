@@ -224,6 +224,37 @@ printf("Alice\n");
 return 0;
 }
 
+// BatteryLow problem in CodeChef
+#include <stdio.h>
+
+int main() {
+	int testCases,i,bt;
+	scanf("%d",&testCases);
+	for(i=0; i<testCases; i++)
+	{
+	    scanf("%d",&bt);
+	    if(bt <= 15)
+	    {
+	        printf("Yes");
+	    }
+	    else
+	    {
+	        printf("No");
+	    }
+	}
+	return 0;
+}
+/* OUTPUT
+2
+10
+Yes
+20
+No
+*/
+
+
+
+
 
 
 
