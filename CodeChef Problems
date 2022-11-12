@@ -252,6 +252,27 @@ Yes
 No
 */
 
+// Bob at the bank Code Chef problem
+#include <iostream>
+using namespace std;
+
+int main() {
+	int testCases,in_bal,dep,ded,n,i,bal;
+	cin>>testCases;
+	for(i=0;i<testCases;i++)
+	{
+	    cin>>in_bal>>dep>>ded>>n;
+	    bal = in_bal+((dep-ded)*n);
+	    cout<<bal;
+	    cout<<endl;
+	}
+	return 0;
+}
+/* OUTPUT
+1
+100 11 1 10
+200
+*/
 
 
 
