@@ -63,3 +63,65 @@ int main()
 In a called function (with return type) comprising of many conditions where conditional operator is used , the output of the conditional operator must be stored in a variable and then only
 returned to the original function. Multiple return statements (in true place of conditional operator) will result in non checking of the entire code and returing 
 to the calling function.
+
+
+// Practice
+// greatest of two numbers using conditional operator
+#include <stdio.h>
+int main ()
+{
+    int a,b;
+    printf("Enter the values for a and b");
+    scanf("%d%d",&a,&b);
+    (a>b) ? printf("a is max"):printf("b is max");
+    return 0;
+}
+
+
+// program to find given number is odd or even number
+#include <stdio.h>
+int main ()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    a%2 != 0 ? printf("The number is odd"):printf("The number is even");
+    return 0;
+}
+
+// Write a c program to print n natural numbers.
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    int i = 1;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        printf("%d",i);
+        i = i+1;
+    }
+}
+
+
+// program to find given number is odd or even number
+#include <stdio.h>
+int main ()
+{
+    int a;
+    printf("Enter a number:");
+    scanf("%d",&a);
+    a%2 == 1 ? printf("The number is odd"):printf("The number is even");
+    return 0;
+}
+// maximum of three  numbers using conditonal operators
+#include <stdio.h>
+int main()
+{
+    int a=5,b=6,c=4;
+    int x = (a>b && a>c)? printf ("%d",a): 
+    (b>c)?printf ("%d",b):printf ("%d",c) ;
+}
+/*
+
